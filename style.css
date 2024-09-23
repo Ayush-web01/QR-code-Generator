@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 450px;
+    background-color:rgba(255, 255, 255, 0.522);
+    width: 450px;
+    border-radius: 15px;
+}
+.card-details{
+padding: 25px 35px;
+
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.heading h2{
+    margin: 10px;
+    padding: 15px;
+    font-weight: 600;
+}
+.card-details input{
+    width:94%;
+    border-radius: 5px;
+    border: 1px solid #494eea;
+    padding: 10px;
+    outline: 0;
+    margin-bottom: 20px;
+    height: 40px;
+}
+#imgBox{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+
+}
+
+#imgBox.show-img{
+max-height: 170px;
+margin: 10px auto;
+border:1px solid #d1d1d1;
+}
+
+.card-details button{
+    width: 80%;
+    height: 40px;
+    color: #fff;
+    background: #494eea;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) ;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.btnBox{
+    display: flex;
+    justify-content: center;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    
+    25%{
+        transform: translateX(-2px);
+    }
+    
+    50%{
+        transform: translateX(0);
+    }
+    
+    75%{
+        transform: translateX(2);
+    }
+    
+    
+    100%{
+        transform: translateX(0);
+    }
+    
+}
